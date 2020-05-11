@@ -1,0 +1,191 @@
+/* Stat component styling */
+monster-stats-component {
+    position: absolute;
+    margin-right: 10px;
+    top: 94px;
+    right: 0;
+    width: 168px;
+    transition: right .5s ease-in-out;
+    -moz-transition: right .5s ease-in-out;
+    -webkit-transition: right .5s ease-in-out;
+    -o-transition: right .5s ease-in-out;
+    border: 8px solid grey;
+    border-radius: 10px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    text-transform: uppercase;
+}
+
+monster-stats-component,
+monster-stats-component * {
+    cursor: pointer;
+    font-family: munro;
+}
+
+monster-stats-component.hide {
+    right: -240px;
+}
+
+monster-stats-component .card-header {
+    font-size: 18px;
+}
+
+monster-stats-component .card-header .card-name {
+    font-weight: bold;
+}
+
+monster-stats-component .card-image-frame {
+    border: 6px solid grey;
+    margin-bottom: 10px;
+}
+
+monster-stats-component .card-image-frame img{
+    width: 168px;
+    height: 126px;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    filter: drop-shadow(0 0 0.25rem #000000);
+}
+
+monster-stats-component .card-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+monster-stats-component .fill {
+    width: 100%;
+}
+
+monster-stats-component .space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+monster-stats-component .divider {
+    border: 1px inset;
+    width: 100%;
+    margin: .5em 0;
+}
+
+monster-stats-component .type {
+    font-size: 18px;
+}
+
+monster-stats-component sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
+}
+
+monster-stats-component sup.increase{
+    color: #a4ff00;
+}
+
+monster-stats-component sup.decrease{
+    color: red;
+}
+
+monster-stats-component button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+monster-stats-component button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+monster-stats-component button:active,
+monster-stats-component button:focus {
+    outline: none;
+}
+
+/* Water type styling */
+monster-stats-component.water {
+    border-color: #1b84ec;
+    background: radial-gradient( at top left,  #a1cfff, #39f)
+}
+
+monster-stats-component.water .card-image-frame{
+    border-color: #1b84ec;
+}
+
+monster-stats-component.water .divider {
+    border-color: #1b84ec;
+}
+
+monster-stats-component.water .type {
+    background-color: #39f;
+}
+
+
+/* Fire type styling */
+monster-stats-component.fire {
+    border-color: #ffff45;
+    background: radial-gradient( at top left,  #ff7e66, #f42)
+}
+
+monster-stats-component.fire .card-image-frame{
+    border-color: #ffff45;
+}
+
+monster-stats-component.fire .divider {
+    border-color: #ffff45;
+}
+
+monster-stats-component.fire .type {
+    background-color: #f42;
+}
+
+/* Earth type styling */
+monster-stats-component.earth {
+    border-color: #c9a63a;
+    background: radial-gradient( at top left,  #ffe38f, #db5)
+}
+
+monster-stats-component.earth .card-image-frame{
+    border-color: #c9a63a;
+}
+
+monster-stats-component.earth .divider {
+    border-color: #c9a63a;
+}
+
+monster-stats-component.earth .type {
+    background-color: #db5;
+}
+
+/* Wind type styling */
+monster-stats-component.wind {
+    border-color: #7384eb;
+    background: radial-gradient( at top left,  #c9d1ff, #89f)
+}
+
+monster-stats-component.wind .card-image-frame{
+    border-color: #7384eb;
+}
+
+monster-stats-component.wind .divider {
+    border-color: #7384eb;
+}
+
+monster-stats-component.wind .type {
+    background-color: #89f;
+}

@@ -1,0 +1,33 @@
+/* map background */
+#background.forrest {
+    background: url('../images/forrest/background.png');
+}
+
+/* map border */
+#background.forrest map-component:before {
+    border-top: 8px #6e9f50 solid;
+    border-bottom: 8px #6e9f50 solid;
+}
+
+#background.forrest map-component:after {
+    border-left: 8px #6e9f50 solid;
+    border-right: 8px #6e9f50 solid;
+}
+
+/* default tile */
+#background.forrest map-component tile-component.tile {
+    background: url("../images/forrest/tile.png");
+}
+
+/* tile with obstacle */
+#background.forrest map-component tile-component.tile.obstacle-1 {
+    background: url("../images/forrest/obstacle1.png");
+}
+
+#background.forrest map-component tile-component.tile.obstacle-2 {
+    background: url("../images/forrest/obstacle2.png");
+}
+
+#background.forrest map-component tile-component.tile.obstacle-3 {
+    background: url("../images/forrest/obstacle3.png");
+}

@@ -1,0 +1,152 @@
+/* Fonts */
+@import 'fonts.css';
+
+/* styles */
+@import 'weather.css';
+@import 'monster-configurator.css';
+@import 'field-boosts.css';
+@import 'monster-stats.css';
+@import 'alert.css';
+
+/* map styles */
+@import 'map.css';
+@import 'forrest.css';
+@import 'desert.css';
+@import 'snow.css';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: munro, cursive;
+    overflow-x: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+#header {
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#background {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group .map-btn {
+    margin: 10px;
+}
+
+.map-btn {
+    background: #ee311c;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-family: munro, cursive;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0 0 #A02415;
+}
+
+.map-btn:not(:disabled):hover {
+    cursor: pointer;
+}
+
+.map-btn:hover {
+    background: #dd2917;
+    box-shadow: inset -6px -6px 0 0 #A02415;
+}
+
+.map-btn:active {
+    box-shadow: inset 4px 4px 0 0 #A02415;
+}
+
+.map-btn.forrest {
+    background: #92CD41;
+    box-shadow: inset -4px -4px 0 0 #4AA52E;
+}
+
+.map-btn.forrest:hover {
+    background: #76c442;
+    box-shadow: inset -6px -6px 0 0 #4AA52E;
+}
+
+.map-btn.forrest:active {
+    box-shadow: inset 4px 4px 0 0 #4AA52E;
+}
+
+.map-btn:before, .map-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+}
+
+.map-btn:before {
+    top: -4px;
+    left: 0;
+    border-top: 4px black solid;
+    border-bottom: 4px black solid;
+}
+
+.map-btn:after {
+    left: -4px;
+    top: 0;
+    border-left: 4px black solid;
+    border-right: 4px black solid;
+}
+
+.map-btn.desert {
+    background: #F7D51D;
+    box-shadow: inset -4px -4px 0 0 #E59400;
+}
+
+.map-btn.desert:hover {
+    background: #F2C409;
+    box-shadow: inset -6px -6px 0 0 #E59400;
+}
+
+.map-btn.desert:active {
+    box-shadow: inset 4px 4px 0 0 #E59400;
+}
+
+.map-btn.snow {
+    background: #4ee7f7;
+    box-shadow: inset -4px -4px 0 0 #36a8f7;
+}
+
+.map-btn.snow:hover {
+    background: #3dd5f7;
+    box-shadow: inset -6px -6px 0 0 #36A8F7;
+}
+
+.map-btn.snow:active {
+    box-shadow: inset 4px 4px 0 0 #36A8F7;
+}
+
+
+.map-btn:disabled {
+    background: #808080;
+    box-shadow: inset 4px 4px 0 0 #505050;
+}
+
+.map-btn:disabled:hover {
+    background: #808080;
+    box-shadow: inset 4px 4px 0 0 #505050;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+}

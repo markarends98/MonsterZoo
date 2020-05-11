@@ -1,0 +1,33 @@
+/* map background */
+#background.snow {
+    background: url('../images/snow/background.png');
+}
+
+/* map border */
+#background.snow map-component:before {
+    border-top: 8px #94a9c0 solid;
+    border-bottom: 8px #94a9c0 solid;
+}
+
+#background.snow map-component:after {
+    border-left: 8px #94a9c0 solid;
+    border-right: 8px #94a9c0 solid;
+}
+
+/* default tile */
+#background.snow map-component tile-component.tile {
+    background: url("../images/snow/tile.png");
+}
+
+/* tile with obstacle */
+#background.snow map-component tile-component.tile.obstacle-1 {
+    background: url("../images/snow/obstacle1.png");
+}
+
+#background.snow map-component tile-component.tile.obstacle-2 {
+    background: url("../images/snow/obstacle2.png");
+}
+
+#background.snow map-component tile-component.tile.obstacle-3 {
+    background: url("../images/snow/obstacle3.png");
+}

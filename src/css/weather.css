@@ -1,0 +1,17 @@
+weather-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+weather-component #ic-weather {
+    max-width: 48px;
+    margin-right: 10px;
+}
+
+weather-component #ic-temperature {
+    width: 75px;
+    font-family: munro;
+    font-size: 24px;
+}

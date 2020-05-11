@@ -1,0 +1,96 @@
+/* Component style */
+field-boost-component {
+    position: relative;
+    background: rgba(168, 168, 168, 0.5);
+    padding: 20px;
+    display: block;
+}
+
+field-boost-component.hide {
+    display: none;
+}
+
+field-boost-component.hide + map-component{
+    margin-top: 0;
+}
+
+field-boost-component:before, field-boost-component:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    z-index: -1;
+}
+
+field-boost-component:before {
+    top: -8px;
+    left: 0;
+    border-top: 8px #433255 solid;
+    border-bottom: 8px #433255 solid;
+}
+
+field-boost-component:after {
+    left: -8px;
+    top: 0;
+    border-left: 8px #433255 solid;
+    border-right: 8px #433255 solid;
+}
+
+.field-boost-container {
+    display: flex;
+}
+
+/* Type styling */
+.type {
+    display: inline-block;
+    width: 66px;
+    border-radius: 4px;
+    margin-right: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+.type.fire {
+    background-color: #f42;
+}
+
+.type.water {
+    background-color: #39f;
+}
+
+.type.wind {
+    background-color: #89f;
+}
+
+.type.earth {
+    background-color: #db5;
+}
+
+/* Layout styling */
+.label-title {
+    display: block;
+    text-transform: uppercase;
+    color: #433255;
+    font-size: 20px;
+}
+
+.field-boost-wrapper {
+    padding-right: 10px;
+}
+
+.field-boost-wrapper:not(:last-child) {
+    border-right: 2px solid #433255;
+}
+
+
+.field-boost-wrapper:not(:first-child) {
+    padding-left: 10px;
+}
+

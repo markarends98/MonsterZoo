@@ -1,0 +1,33 @@
+/* map background */
+#background.desert {
+    background: url('../images/desert/background.png');
+}
+
+/* map border */
+#background.desert map-component:before {
+    border-top: 8px #e6be74 solid;
+    border-bottom: 8px #e6be74 solid;
+}
+
+#background.desert map-component:after {
+    border-left: 8px #e6be74 solid;
+    border-right: 8px #e6be74 solid;
+}
+
+/* default tile */
+#background.desert map-component tile-component.tile {
+    background: url("../images/desert/tile.png");
+}
+
+/* tile with obstacle */
+#background.desert map-component tile-component.tile.obstacle-1 {
+    background: url("../images/desert/obstacle1.png");
+}
+
+#background.desert map-component tile-component.tile.obstacle-2 {
+    background: url("../images/desert/obstacle2.png");
+}
+
+#background.desert map-component tile-component.tile.obstacle-3 {
+    background: url("../images/desert/obstacle3.png");
+}

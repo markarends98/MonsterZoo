@@ -1,0 +1,48 @@
+error-component {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: .75rem 1.25rem;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    background-color: #f8d7da;
+    z-index: +1;
+    font-size: 18px;
+
+    transition: top .5s ease-in-out;
+    -o-transition: top .5s ease-in-out;
+    -webkit-transition: top .5s ease-in-out;
+    -moz-transition: top .5s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+error-component.hide {
+    top: -100px;
+}
+
+error-component .close {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    padding: .75rem 1.25rem;
+    cursor: pointer;
+}
+
+error-component button.close {
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    font-size: 18px;
+}
+error-component .close:active,
+error-component .close:focus{
+    outline: none;
+}

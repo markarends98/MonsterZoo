@@ -1,0 +1,233 @@
+.monster-configurator-container {
+    margin: 25px 25px 0 0;
+}
+
+monster-configurator-component {
+    height: fit-content;
+    width: 340px;
+    background: rgba(168, 168, 168, 0.5);
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+monster-configurator-component * {
+    font-family: munro, cursive;
+}
+
+monster-configurator-component:before, monster-configurator-component:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    z-index: -1;
+}
+
+monster-configurator-component:before {
+    top: -8px;
+    left: 0;
+    border-top: 8px #433255 solid;
+    border-bottom: 8px #433255 solid;
+}
+
+monster-configurator-component:after {
+    left: -8px;
+    top: 0;
+    border-left: 8px #433255 solid;
+    border-right: 8px #433255 solid;
+}
+
+monster-configurator-component label {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #433255;
+    display: block;
+}
+
+monster-configurator-component input,
+monster-configurator-component select,
+monster-configurator-component button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 2px solid #433255;
+    color: #433255;
+    width: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+monster-configurator-component button.small {
+    font-size: 12px;
+    padding: 5px;
+    width: 75px;
+}
+
+monster-configurator-component button.small:active {
+    padding: 6px 4px 4px 6px;
+}
+
+monster-configurator-component select:hover {
+    background-color: #e2e2e2;
+}
+
+monster-configurator-component button:hover {
+    color: #ffffff;
+    background-color: #433255;
+}
+
+monster-configurator-component button:active {
+    padding: 11px 9px 9px 11px;
+}
+
+monster-configurator-component select {
+    background-image: url('../images/arrow-down.png');
+    background-repeat: no-repeat;
+    background-size: 38px;
+    background-position: right 0 top 50%, 0 0;
+}
+
+monster-configurator-component input:active,
+monster-configurator-component input:focus,
+monster-configurator-component select:active,
+monster-configurator-component select:focus,
+monster-configurator-component button:active,
+monster-configurator-component button:focus {
+    outline: none;
+}
+
+
+/* The container */
+monster-configurator-component radio-group-component {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 150px;
+    display: block;
+}
+
+monster-configurator-component radio-group-component .cRadio {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+monster-configurator-component radio-group-component .cRadio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    display: none;
+}
+
+/* Create a custom radio button */
+monster-configurator-component radio-group-component .cRadio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+monster-configurator-component radio-group-component .cRadio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+monster-configurator-component radio-group-component .cRadio input:checked ~ .checkmark {
+    background-color: #433255;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+monster-configurator-component radio-group-component .cRadio .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+monster-configurator-component radio-group-component .cRadio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+monster-configurator-component radio-group-component .cRadio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Monster validation message styling */
+monster-configurator-component span.message {
+    margin-bottom: 20px;
+    visibility: hidden;
+}
+
+monster-configurator-component span.message.show {
+    visibility: visible;
+}
+
+monster-configurator-component span.message.info {
+    color: #000000;
+}
+
+monster-configurator-component span.message.error {
+    color: #ea1b1b;
+}
+
+monster-configurator-component span.message.success {
+    color: #12bd29;
+}
+
+/* Monster preview styling */
+monster-configurator-component .monster-preview-container {
+    width: 100%;
+}
+
+monster-configurator-component .monster-preview {
+    width: 112px;
+    height: 84px;
+    margin: 10px 0;
+    filter: drop-shadow(0 0 0.25rem #000000);
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.center {
+    margin-right: auto!important;
+    margin-left: auto!important;
+    display: block;
+}
